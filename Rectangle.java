@@ -1,4 +1,4 @@
-class Rectangle
+public class Rectangle
 {
     private int m_width;
     private int m_height;
