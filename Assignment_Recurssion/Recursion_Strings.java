@@ -5,7 +5,7 @@ public class Recursion_Strings
 {
     public static void main(String[] args)
     {
-        System.out.println(""+foo("hello world",'l'));
+        System.out.println(""+c(4,3));
 
 
     }
@@ -21,5 +21,17 @@ public class Recursion_Strings
             }
         }
         return ret;
+    }
+
+    public static int c(int n, int k)
+    {
+        if((n == 0) ||(k==0)||(n==k) )
+        {
+            return 1;
+        }
+        else
+        {
+            return c(n-1,k)+c(n-1,k-1);
+        }
     }
 } 
