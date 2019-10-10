@@ -9,7 +9,7 @@ public class Recursion_Strings
 
 
     }
-    public static String foo(String a, char b)
+    public static String foo(String a, char b)//part 3
     {
         String ret ="";
         
@@ -23,7 +23,7 @@ public class Recursion_Strings
         return ret;
     }
 
-    public static int c(int n, int k)
+    public static int c(int n, int k)//part 4
     {
         if((n == 0) ||(k==0)||(n==k) )
         {
