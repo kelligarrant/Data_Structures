@@ -1,7 +1,7 @@
 public class MinStack<T extends Comparable<T>> implements IStack<T>
 {
-    private StackLL m_stack;
-    private StackLL min_stack;
+    private StackLL<T> m_stack = new StackLL<T>();
+    private StackLL<T> min_stack = new StackLL<T>();
     
     @Override
     public void push(T n)
@@ -26,7 +26,7 @@ public class MinStack<T extends Comparable<T>> implements IStack<T>
         }
     }
     @Override
-    public T pop();
+    public T pop()
     {
         if(isEmpty())
         {
